@@ -1,10 +1,17 @@
-import Header from "../Header/Header"
+import React from "react";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
-function Layout() {
+type Props = {
+  children?: React.ReactNode;
+};
+
+function Layout({ children }: Props) {
   return (
     <div>
-      <Header></Header>
-      {/* <Footer></Footer> */}
+      <Header/>
+      {children}
+      <Footer/>
     </div>
   );
 }

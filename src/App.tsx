@@ -1,14 +1,16 @@
 import React, { Fragment } from "react";
 
 import "./App.css";
-import Header from "./components/Header/Header";
+import Layout from "./components/Layout/Layout";
 import { Breakpoint, BreakpointProvider } from "react-socks";
 
 function App() {
   return (
     <Fragment>
       <BreakpointProvider>
-        <Header />
+        <Layout>
+
+        </Layout>
       </BreakpointProvider>
     </Fragment>
   );

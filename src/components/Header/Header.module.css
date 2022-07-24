@@ -9,7 +9,6 @@
 
 .nav-list__mobile {
   display: flex;
-  list-style: none;
   justify-content: space-between;
   align-items: center;
 }
@@ -19,9 +18,11 @@
 }
 
 .img-container {
+  height: 5rem;
+  width: 5rem;
   margin: 0 2rem;
 }
 
 .img-container img {
-  height: 5rem;
+  height: 100%;
 }
