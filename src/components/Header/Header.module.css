@@ -1,0 +1,27 @@
+.header {
+  position: fixed;
+  background-color: #191919;
+  top: 0;
+  left: 0;
+  height: 7rem;
+  width: 100%;
+}
+
+.nav-list__mobile {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header li {
+  color: #b5b5b5;
+}
+
+.img-container {
+  margin: 0 2rem;
+}
+
+.img-container img {
+  height: 5rem;
+}
