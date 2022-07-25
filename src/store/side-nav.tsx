@@ -5,11 +5,9 @@ const sideNavSlice = createSlice({
   initialState: { isOpen: false },
   reducers: {
     open(state) {
-        console.log("Opening side nav");
       state.isOpen = true;
     },
     close(state) {
-      console.log("Loggin out!");
       state.isOpen = false;
     },
   },

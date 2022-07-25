@@ -1,5 +1,5 @@
 import css from "./Header.module.css";
-import logo from "../../images/logo.jpg";
+import logo from "../../images/logo.jpg"
 
 import { useAppDispatch, useAppSelector } from "../../hooks/hooks";
 import { sideNavActions } from "../../store/side-nav";
@@ -25,7 +25,7 @@ function Header() {
             <div             
               className={css["img-container"]}
             >
-              <img src={logo} alt="logo" />
+              <img src={require("../../images/logo.jpg")} alt="logo" />
             </div>
           </ul>
           {sideNavOpen && <SideNav />}
