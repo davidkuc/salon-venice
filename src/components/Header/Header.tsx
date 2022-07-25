@@ -3,6 +3,7 @@ import logo from "../../images/logo.jpg";
 
 import { Breakpoint } from "react-socks";
 import Hamburger from "../UI/Hamburger/Hamburger";
+import SideNav from "../UI/SideNav/SideNav";
 
 function Header() {
   return (
@@ -15,6 +16,7 @@ function Header() {
               <img src={logo} alt="logo" />
             </div>
           </ul>
+          <SideNav />
         </Breakpoint>
         <Breakpoint medium up>
           <ul className={css["nav-list"]}>

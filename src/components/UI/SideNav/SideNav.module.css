@@ -1,0 +1,38 @@
+.sideNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #ffe5d4;
+    border-right-color: coral;
+    border-right-width: 10px;
+    border-right-style: solid;
+    width: 25rem;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .sideNav > li {
+    margin: 30px 40px;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: coral;
+    border-radius: 5px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 3rem;
+    background-color: #ffe5d4 !important;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    color: rgb(0, 0, 0) !important;
+  }

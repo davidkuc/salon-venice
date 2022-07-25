@@ -1,4 +1,5 @@
 .header {
+  z-index: 1;
   position: fixed;
   background-color: #191919;
   top: 0;
@@ -11,9 +12,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
+  margin-top: 1rem;
 }
 
-.header li {
+.header > li {
   color: #b5b5b5;
 }
 
@@ -23,6 +26,6 @@
   margin: 0 2rem;
 }
 
-.img-container img {
+.img-container > img {
   height: 100%;
 }
