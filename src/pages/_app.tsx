@@ -1,16 +1,21 @@
+import { BreakpointProvider } from "react-socks";
+import { Provider } from "react-redux";
+
 import "../styles/globals.css";
 
 import type { AppProps } from "next/app";
 import Layout from "../components/Layout/Layout";
-import { BreakpointProvider } from "react-socks";
+import store from "../store/index";
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <BreakpointProvider>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </BreakpointProvider>
+    <Provider store={store}>
+      <BreakpointProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </BreakpointProvider>
+    </Provider>
   );
 }
 
