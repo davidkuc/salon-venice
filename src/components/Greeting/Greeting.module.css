@@ -1,18 +1,28 @@
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 30rem;
-    background-color: var(--color-coral);
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-coral);
+  height: 30rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+  min-width:22rem;
+  border: 3px solid var(--color-black);
 }
 
 .title {
-    font-size: 7rem;
-font-family: var(--font-cormorant);
+  font-size: 7rem;
+  font-family: var(--font-cormorant);
 }
 
 .sub-title {
-    font-size: 1.4rem;
-    font-family: var(--font-lato);
+  font-size: 1.4rem;
+  font-family: var(--font-lato);
 }

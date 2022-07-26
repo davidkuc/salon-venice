@@ -2,27 +2,25 @@
   margin: 30px 40px;
   padding: 1rem 2rem;
   text-align: center;
-  color: rgb(0, 0, 0);
-  background-color: coral;
+  color: var(--color-black);
+  background-color: var(--color-coral);
   border-radius: 5px;
   border-bottom-style: solid;
-  border-bottom-width: 4px ;
-  border-bottom-color: rgba(0, 0, 0, 0) ;
+  border-bottom-width: 4px;
+  border-bottom-color: rgba(0, 0, 0, 0);
 }
-
-
 
 .link {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: var(--color-black);
 }
 
 .sidenav-button:active,
 .sidenav-button:hover {
-  background-color: rgb(252, 79, 16);
-  border-bottom-color: rgb(0, 0, 0) !important;
+  background-color: var(--color-coral-active);
+  border-bottom-color: var(--color-black) !important;
 }
 
 .icon-fix {
---fa-primary-color: black;
+  --fa-primary-color: var(--color-black);
 }
