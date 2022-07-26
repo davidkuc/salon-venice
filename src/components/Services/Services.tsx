@@ -9,11 +9,11 @@ function Services() {
       <div className={css.title}>Usługi</div>
       <div className={css["line-break-horizontal"]}></div>
       <article className={css.article}>
-        <ServiceIcon icon={"spa"}>Makijaż</ServiceIcon>
+        <ServiceIcon icon="spa">Makijaż</ServiceIcon>
         <div className={css["line-break-vertical"]}></div>
-        <ServiceIcon icon={"mortar-pestle"}>Pielęgnacja skóry</ServiceIcon>
+        <ServiceIcon icon="mortar-pestle">Pielęgnacja skóry</ServiceIcon>
         <div className={css["line-break-vertical"]}></div>
-        <ServiceIcon icon={"spray-can-sparkles"}>
+        <ServiceIcon icon="spray-can-sparkles">
           {"Pedicure & Manicure"}
         </ServiceIcon>
       </article>

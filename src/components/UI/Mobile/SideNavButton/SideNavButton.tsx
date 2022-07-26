@@ -3,11 +3,11 @@ import css from "./SideNavButton.module.css";
 import Link from "next/link";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
+import { IconName } from "@fortawesome/fontawesome-svg-core";
 
 type Props = {
   path: string;
-  icon?: IconDefinition;
+  icon?: IconName;
   children: string;
 };
 

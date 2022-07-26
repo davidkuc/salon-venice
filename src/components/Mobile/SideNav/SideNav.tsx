@@ -1,20 +1,20 @@
 import css from "./SideNav.module.css";
+import "../../providers/icons"
 
 import Backdrop from "../../UI/Backdrop/Backdrop";
 import SideNavButton from "../../UI/Mobile/SideNavButton/SideNavButton";
 import BrandLink from "../../UI/BrandLink/BrandLink";
 
-import { useAppDispatch, useAppSelector } from "../../../hooks/hooks";
+import { useAppDispatch } from "../../../hooks/hooks";
 import { sideNavActions } from "../../../store/side-nav";
 
-import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {faFacebookF, faInstagram} from "@fortawesome/free-brands-svg-icons"
 
 function SideNav() {
   const dispatch = useAppDispatch();
 
   const backdropClickHandler = () => {
-dispatch(sideNavActions.close());
+    dispatch(sideNavActions.close());
   };
 
   return (

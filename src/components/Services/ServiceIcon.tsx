@@ -8,7 +8,7 @@ type Props = {
   children: string;
 };
 
-const ServicesIcon: React.FC<Props> = ({ icon, children }) => {
+const ServiceIcon: React.FC<Props> = ({ icon, children }) => {
   return (
     <section className={css.section}>
       <FontAwesomeIcon icon={icon} className={css["icon-fix"]} />
@@ -17,4 +17,4 @@ const ServicesIcon: React.FC<Props> = ({ icon, children }) => {
   );
 };
 
-export default ServicesIcon;
+export default ServiceIcon;
