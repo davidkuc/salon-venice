@@ -1,4 +1,3 @@
-import { BreakpointProvider } from "react-socks";
 import { Provider } from "react-redux";
 
 import "../styles/globals.css";
@@ -10,11 +9,9 @@ import store from "../store/index";
 function App({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
-      <BreakpointProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </BreakpointProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </Provider>
   );
 }

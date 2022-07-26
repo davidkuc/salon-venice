@@ -1,12 +1,12 @@
 import css from "./Header.module.css";
-import { Logo } from "../../images/images";
+import { Logo } from "../providers/images";
 
 import { useAppDispatch, useAppSelector } from "../../hooks/hooks";
 import { sideNavActions } from "../../store/side-nav";
 
-import { Breakpoint } from "react-socks";
 import Hamburger from "../UI/Hamburger/Hamburger";
 import SideNav from "../Mobile/SideNav/SideNav";
+import MediaQuery from "react-responsive";
 
 function Header() {
   const sideNavOpen = useAppSelector((state) => state.sideNav.isOpen);
@@ -17,9 +17,9 @@ function Header() {
   };
 
   return (
-    <div className={css.header}>
+    <header className={css.header}>
       <nav className={css.nav}>
-        <Breakpoint small down>
+        <MediaQuery maxWidth={600}>
           <ul className={css["nav-list__mobile"]}>
             <Hamburger onClick={hamburgerClickHandler} />
             <div className={css["img-container"]}>
@@ -27,8 +27,8 @@ function Header() {
             </div>
           </ul>
           {sideNavOpen && <SideNav />}
-        </Breakpoint>
-        <Breakpoint medium up>
+        </MediaQuery>
+        <MediaQuery minWidth={600}>
           <ul className={css["nav-list"]}>
             <li>Strona Główna</li>
             <li>Cennik</li>
@@ -37,9 +37,9 @@ function Header() {
             <li>Facebook</li>
             <li>Instagram</li>
           </ul>
-        </Breakpoint>
+        </MediaQuery>
       </nav>
-    </div>
+    </header>
   );
 }
 

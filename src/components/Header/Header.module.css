@@ -1,7 +1,7 @@
 .header {
   z-index: 1;
   position: fixed;
-  background-color: #191919;
+  background-color: var(--color-black);
   top: 0;
   left: 0;
   height: 7rem;
