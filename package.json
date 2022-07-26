@@ -16,8 +16,8 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "next": "^12.2.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-redux": "^8.0.2",
     "react-scripts": "5.0.1",
     "react-socks": "^2.2.0",
@@ -46,5 +46,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "url-loader": "^4.1.1",
+    "webpack": "^5.74.0"
   }
 }

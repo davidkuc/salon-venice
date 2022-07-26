@@ -1,5 +1,5 @@
 import css from "./Header.module.css";
-import logo from "../../images/logo.jpg"
+import { Logo } from "../../images/images";
 
 import { useAppDispatch, useAppSelector } from "../../hooks/hooks";
 import { sideNavActions } from "../../store/side-nav";
@@ -22,10 +22,8 @@ function Header() {
         <Breakpoint small down>
           <ul className={css["nav-list__mobile"]}>
             <Hamburger onClick={hamburgerClickHandler} />
-            <div             
-              className={css["img-container"]}
-            >
-              <img src={require("../../images/logo.jpg")} alt="logo" />
+            <div className={css["img-container"]}>
+              <Logo />
             </div>
           </ul>
           {sideNavOpen && <SideNav />}
