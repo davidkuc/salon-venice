@@ -15,7 +15,7 @@ type Props = {
 };
 
 function ImageSlider(props: Props) {
-  const [currId, setCurrId] = useState(0);
+  const [currId, setCurrId] = useState(props.initialImageId);
 
   const images = [...props.images];
   const lastId = images.length - 1;
@@ -46,7 +46,9 @@ function ImageSlider(props: Props) {
   return (
     <section className={css.section}>
       <Backdrop />
-      <div className={css["img-container"]}>{GetImage(images[currId].imageName)}</div>
+      <div className={css["img-container"]}>
+        {GetImage(images[currId].imageName)}
+      </div>
       <div onClick={exitClickHandler} className={css["xmark-container"]}>
         <FontAwesomeIcon icon={"xmark"} inverse size="5x" />
       </div>

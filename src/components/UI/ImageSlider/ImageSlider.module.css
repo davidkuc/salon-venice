@@ -18,9 +18,8 @@
 
 .img-container {
   z-index: 1;
-  min-width: 2rem;
-  min-height: 2rem;
-  max-height: 50rem;
+  min-width: 22rem;
+  max-height: 45rem;
   max-width: 90vw;
   background-color: black;
 }

@@ -8,14 +8,13 @@ import { ImageObj } from "../providers/types";
 
 function Gallery() {
   const [imageOpen, setImageOpen] = useState(true);
-
-  let initialImageId = 0;
+  const [initialImageId, setInitialImageId] = useState(0);
 
   const images = [
-    new ImageObj("face1.jpg", 1),
-    new ImageObj("nails1.jpg", 2),
-    new ImageObj("nails2.jpg", 3),
-    new ImageObj("nails3.jpg", 4),
+    new ImageObj("face1.jpg", 0),
+    new ImageObj("nails1.jpg", 1),
+    new ImageObj("nails2.jpg", 2),
+    new ImageObj("nails3.jpg", 3),
   ];
 
   const exitClickHandler = () => {
@@ -23,7 +22,7 @@ function Gallery() {
   };
 
   const openImageHandler = (id: number) => {
-    initialImageId = id;
+    setInitialImageId(id);
     setImageOpen(true);
   };
 
