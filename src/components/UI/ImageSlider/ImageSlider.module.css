@@ -18,6 +18,8 @@
 
 .img-container {
   z-index: 1;
+  min-width: 2rem;
+  min-height: 2rem;
   max-height: 50rem;
   max-width: 90vw;
   background-color: black;
@@ -31,4 +33,16 @@
   left: 2.3rem;
   display: flex;
   justify-content: space-between;
+}
+
+.xmark-container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 1rem;
+  right: 1rem;
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--color-black);
 }

@@ -1,9 +1,17 @@
 import css from "./Gallery.module.css";
 
+import { useState } from "react";
+
 import { Face1, Nails1, Nails2, Nails3 } from "../providers/images";
 import ImageSlider from "../UI/ImageSlider/ImageSlider";
 
 function Gallery() {
+const [imageOpen, setImageOpen] = useState(true);
+
+const exitClickHandler = () => {
+
+}
+
   return (
     <section className={css.section}>
       <div className={css.title}>Galeria</div>
@@ -22,7 +30,7 @@ function Gallery() {
           <Nails3 />
         </li>
       </ul>
-      <ImageSlider/>
+     {imageOpen && <ImageSlider onBackdropClick={exitClickHandler} />} 
     </section>
   );
 }

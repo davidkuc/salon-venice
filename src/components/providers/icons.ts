@@ -6,6 +6,7 @@ import {
   faMortarPestle,
   faAngleLeft,
   faAngleRight,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -15,5 +16,6 @@ library.add(
   faFacebookF,
   faInstagram,
   faAngleLeft,
-  faAngleRight
+  faAngleRight,
+  faXmark
 );
