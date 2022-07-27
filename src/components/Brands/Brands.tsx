@@ -1,11 +1,6 @@
 import css from "./Brands.module.css";
 
-import {
-  FolaroniLogo,
-  MACLogo,
-  OrganicSeriesLogo,
-  SouvreLogo,
-} from "../providers/images";
+import { GetImage } from "../providers/images";
 
 function Brands() {
   return (
@@ -13,20 +8,20 @@ function Brands() {
       <div className={css.title}>Topowe marki</div>
       <div className={css["line-break-horizontal"]}></div>
       <ul className={css.list}>
-        <li className={css.souvre} >
-          <SouvreLogo />
+        <li className={css.souvre}>
+          {GetImage("souvre-logo.png")}
         </li>
         <div className={css["line-break-horizontal-black"]}></div>
         <li className={css["organic-series"]}>
-          <OrganicSeriesLogo />
+        {GetImage("organic-series-logo.png")}
         </li>
         <div className={css["line-break-horizontal-black"]}></div>
         <li className={css.mac}>
-          <MACLogo />
+        {GetImage("MAC-logo.png")}
         </li>
         <div className={css["line-break-horizontal-black"]}></div>
         <li className={`${css["last-child"]} ${css["folaroni"]}`}>
-          <FolaroniLogo />
+        {GetImage("folaroni-logo.png")}
         </li>
       </ul>
     </section>

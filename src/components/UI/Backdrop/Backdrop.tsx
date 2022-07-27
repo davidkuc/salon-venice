@@ -3,7 +3,7 @@ import css from "./Backdrop.module.css";
 import {onClickFunc} from "../../providers/types" 
 
 type Props = {
-  onClick: onClickFunc;
+  onClick?: onClickFunc;
 };
 
 function Backdrop(props: Props) {

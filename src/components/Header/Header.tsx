@@ -1,5 +1,5 @@
 import css from "./Header.module.css";
-import { Logo } from "../providers/images";
+import { GetImage } from "../providers/images";
 
 import { useAppDispatch, useAppSelector } from "../../hooks/hooks";
 import { sideNavActions } from "../../store/side-nav";
@@ -23,7 +23,7 @@ function Header() {
           <ul className={css["nav-list__mobile"]}>
             <Hamburger onClick={hamburgerClickHandler} />
             <div className={css["img-container"]}>
-              <Logo />
+              {GetImage("logo-venice.png")}
             </div>
           </ul>
           {sideNavOpen && <SideNav />}
