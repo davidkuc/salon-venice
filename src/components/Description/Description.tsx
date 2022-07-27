@@ -1,7 +1,5 @@
 import css from "./Description.module.css";
 
-import { CosmeticBackground } from "../providers/images";
-
 function Description() {
   return (
     <section className={css.section}>
