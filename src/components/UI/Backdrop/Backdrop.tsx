@@ -1,7 +1,9 @@
 import css from "./Backdrop.module.css";
 
+import {onClickFunc} from "../../providers/types" 
+
 type Props = {
-  onClick: (event: React.MouseEvent<HTMLElement>) => void;
+  onClick: onClickFunc;
 };
 
 function Backdrop(props: Props) {

@@ -6,19 +6,21 @@ import Backdrop from "../Backdrop/Backdrop";
 import NavArrow from "./NavArrow";
 
 type Props = {
-  onBackdropClick: Function;
+  onExitClick: Function;
 };
 
 function ImageSlider(props: Props) {
   const navArrowHandler = (direction: string) => {};
 
-  const backdropClickHandler = () => {};
+  const exitClickHandler = () => {
+props.onExitClick();
+  };
 
   return (
     <section className={css.section}>
-      <Backdrop onClick={backdropClickHandler} />
+      <Backdrop onClick={exitClickHandler} />
       <div className={css["img-container"]}></div>
-      <div className={css["xmark-container"]}>
+      <div onClick={exitClickHandler} className={css["xmark-container"]}>
         <FontAwesomeIcon icon={"xmark"} inverse size="5x"/>
       </div>
       <div className={css["arrows-container"]}>

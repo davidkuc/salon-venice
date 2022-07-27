@@ -40,6 +40,11 @@ export function Face1() {
   return <Image src="/face1.jpg" alt="me" layout="fill" />;
 }
 
+/**
+ * 
+ * @param imageName image name with extension (ex. .jpg)
+ * @returns 
+ */
 export function GetImage(imageName: string) {
   return <Image src={`/${imageName}`} alt="me" layout="fill" />;
 }

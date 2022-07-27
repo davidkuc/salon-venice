@@ -6,31 +6,35 @@ import { Face1, Nails1, Nails2, Nails3 } from "../providers/images";
 import ImageSlider from "../UI/ImageSlider/ImageSlider";
 
 function Gallery() {
-const [imageOpen, setImageOpen] = useState(true);
+  const [imageOpen, setImageOpen] = useState(true);
 
-const exitClickHandler = () => {
+  const exitClickHandler = () => {
+    setImageOpen(false);
+  };
 
-}
+  const openImageHandler = () => {
+    setImageOpen(true);
+  };
 
   return (
     <section className={css.section}>
       <div className={css.title}>Galeria</div>
       <div className={css["line-break-horizontal"]}></div>
       <ul className={css.list}>
-        <li key={"img1"} className={css.face1}>
+        <li onClick={openImageHandler} className={css.face1}>
           <Face1 />
         </li>
-        <li key={"img2"} className={css.nails1}>
+        <li onClick={openImageHandler} className={css.nails1}>
           <Nails1 />
         </li>
-        <li key={"img3"} className={css.nails2}>
+        <li onClick={openImageHandler} className={css.nails2}>
           <Nails2 />
         </li>
-        <li key={"img4"} className={css.nails3}>
+        <li onClick={openImageHandler} className={css.nails3}>
           <Nails3 />
         </li>
       </ul>
-     {imageOpen && <ImageSlider onBackdropClick={exitClickHandler} />} 
+      {imageOpen && <ImageSlider onExitClick={exitClickHandler} />}
     </section>
   );
 }
