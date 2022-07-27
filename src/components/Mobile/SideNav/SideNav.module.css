@@ -30,7 +30,7 @@
   }
 
   .title {
-    font-family: var("--font-cor");
+    font-family: var(--font-title);
     text-align: center;
     font-size: 4rem;
     background-color: #ffe5d4 !important;

@@ -11,8 +11,8 @@ type Props = {
 const ServiceIcon: React.FC<Props> = ({ icon, children }) => {
   return (
     <section className={css.section}>
-      <FontAwesomeIcon icon={icon} className={css["icon-fix"]} />
-      <div>{children}</div>
+      <FontAwesomeIcon icon={icon} className={css["icon-fix"]} size="6x" />
+      <div className={css.text}>{children}</div>
     </section>
   );
 };

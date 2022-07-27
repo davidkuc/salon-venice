@@ -8,15 +8,21 @@ function Services() {
     <section className={css.section}>
       <div className={css.title}>Usługi</div>
       <div className={css["line-break-horizontal"]}></div>
-      <article className={css.article}>
-        <ServiceIcon icon="spa">Makijaż</ServiceIcon>
-        <div className={css["line-break-vertical"]}></div>
-        <ServiceIcon icon="mortar-pestle">Pielęgnacja skóry</ServiceIcon>
-        <div className={css["line-break-vertical"]}></div>
-        <ServiceIcon icon="spray-can-sparkles">
-          {"Pedicure & Manicure"}
-        </ServiceIcon>
-      </article>
+      <ul className={css.list}>
+        <li>
+          <ServiceIcon icon="spa">Makijaż</ServiceIcon>
+        </li>
+        <div className={css["line-break-horizontal-black"]}></div>
+        <li>
+          <ServiceIcon icon="mortar-pestle">Pielęgnacja skóry</ServiceIcon>
+        </li>
+        <div className={css["line-break-horizontal-black"]}></div>
+        <li className={css["last-child"]}>
+          <ServiceIcon icon="spray-can-sparkles">
+            {"Pedicure & Manicure"}
+          </ServiceIcon>
+        </li>
+      </ul>
       <Button path={"dummy"}>Cennik</Button>
     </section>
   );

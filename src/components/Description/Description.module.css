@@ -1,0 +1,22 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+  background-color: var(--color-beige);
+}
+
+.textbox {
+  padding: 0 2.5rem;
+  padding-top: 3rem;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: var(--font-title);
+  font-weight: bold;
+  color: black;
+  width: 80vw;
+  height: 30rem;
+  background-color: #fd7a4b52;
+  border: 5px solid var(--color-coral);
+}

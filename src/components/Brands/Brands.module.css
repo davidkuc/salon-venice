@@ -1,0 +1,67 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  margin-top: 2rem;
+  font-size: 2.4rem;
+  font-family: var(--font-cormorant);
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.list > li {
+  position: relative;
+}
+
+.souvre {
+  height: 23rem;
+  width: 27rem;
+}
+
+.organic-series {
+  height: 23rem;
+  width: 27rem;
+}
+
+.mac {
+  height: 20rem;
+  width: 24rem;
+}
+
+.folaroni {
+  height: 15rem;
+  width: 24rem;
+}
+
+.last-child {
+  margin-bottom: 4rem;
+}
+
+.line-break-horizontal {
+  margin: 0;
+  margin-bottom: 2rem;
+  width: 14.7rem;
+  height: 3px;
+  background-color: var(--color-coral);
+  border-radius: 12px;
+}
+
+.line-break-horizontal-black {
+  width: 14rem;
+  height: 2px;
+  background-color: var(--color-black-active);
+  border-radius: 12px;
+}

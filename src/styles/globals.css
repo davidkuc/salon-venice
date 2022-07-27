@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
 :root {
-  --font-cormorant: "Cormorant";
-  --font-lato: "Lato";
+  --font-title: "Cormorant";
+  --font-text: "Lato";
 
   --color-coral: #ff7f50;
   --color-coral-active: #fc4f10;
@@ -20,11 +21,10 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 7rem;
-  padding-bottom: 4rem;
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 1920px;
+  height: auto;
 }
 
 /* Preferred box-sizing value */
