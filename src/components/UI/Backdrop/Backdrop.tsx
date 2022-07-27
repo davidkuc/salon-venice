@@ -8,9 +8,6 @@ function Backdrop(props: Props) {
   return (
     <div onClick={props.onClick}>
       <ul className={css.backdrop}>
-        <li></li>
-        <li></li>
-        <li></li>
       </ul>
     </div>
   );

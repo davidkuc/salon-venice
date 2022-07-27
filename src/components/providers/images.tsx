@@ -39,3 +39,7 @@ export function Nails3() {
 export function Face1() {
   return <Image src="/face1.jpg" alt="me" layout="fill" />;
 }
+
+export function GetImage(imageName: string) {
+  return <Image src={`/${imageName}`} alt="me" layout="fill" />;
+}

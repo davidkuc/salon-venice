@@ -4,6 +4,8 @@ import {
   faSpa,
   faSprayCanSparkles,
   faMortarPestle,
+  faAngleLeft,
+  faAngleRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -11,5 +13,7 @@ library.add(
   faSprayCanSparkles,
   faMortarPestle,
   faFacebookF,
-  faInstagram
+  faInstagram,
+  faAngleLeft,
+  faAngleRight
 );
