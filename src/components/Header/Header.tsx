@@ -76,7 +76,6 @@ function Header() {
                   Facebook
                 </Button>
               </div>
-              <div className={css["button-divider"]}></div>
               <div>
                 <Button
                   className={css.button}

@@ -26,9 +26,7 @@
   width: 100%;
 }
 
-.nav-list > li {
-  margin: 0 2.2rem;
-}
+
 
 .nav-buttons-left {
   display: flex;
@@ -41,6 +39,7 @@
   display: flex;
   align-items: center;
   min-width: 15rem;
+  gap: 5vw;
 }
 
 .button {
@@ -58,9 +57,18 @@
     margin-right: 2.5rem !important;
   }
 
+  .nav-buttons-right {
+    gap: 2vw;
+  }
+
   .button-link {
     font-size: 2.4vw;
   }
+
+  .button-divider {
+    width: 3vw;
+  }
+  
 }
 
 .title {
@@ -84,8 +92,6 @@
 .nav-divider {
   height: 7rem;
   width: 15rem;
+  margin: 0 4.5rem;
 }
 
-.button-divider {
-  width: 7vw;
-}
