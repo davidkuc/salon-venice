@@ -62,7 +62,7 @@ function Header() {
                 </Button>
               </div>
             </li>
-
+            <li className={css["nav-divider"]}></li>
             <li className={css["img-container"]}>
               {GetImage("logo-venice.png")}
             </li>

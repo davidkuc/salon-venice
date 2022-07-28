@@ -23,22 +23,24 @@
   margin: 0;
   padding: 0 2rem;
   height: 7rem;
-  width: 100%
+  width: 100%;
+}
+
+.nav-list > li {
+margin: 0 2rem;
 }
 
 .nav-buttons-left {
-  position: absolute;
   display: flex;
-  width: 20rem;
-
-  left: 2rem;
+  align-items: center;
+  max-width: 20rem;
 }
 
 .nav-buttons-right {
-  position: absolute;
   display: flex;
+  align-items: center;
+ gap: 2rem;
   min-width: 15rem;
-  right: 2rem;
 }
 
 .button {
@@ -56,15 +58,18 @@
 .img-container-mobile {
   position: absolute;
   right: 0rem;
-  min-width:9rem;
+  min-width: 9rem;
   min-height: 9rem;
   margin: 0;
 }
 
 .img-container {
   position: absolute;
-  min-width:  15rem;
+  min-width: 15rem;
   min-height: 15rem;
-  margin: 0;
 }
 
+.nav-divider {
+  height: 7rem;
+width: 15rem;
+}
