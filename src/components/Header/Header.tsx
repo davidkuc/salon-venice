@@ -15,7 +15,8 @@ import Button from "../UI/Button/Button";
 
 function Header() {
   const router = useRouter();
-  console.log(router.pathname);
+  const path = router.pathname;
+  console.log(path);
   const sideNavOpen = useAppSelector((state) => state.sideNav.isOpen);
   const dispatch = useAppDispatch();
 
@@ -42,7 +43,11 @@ function Header() {
                 {" "}
                 <Button
                   className={css.button}
-                  linkClassName={css["button-link"]}
+                  linkClassName={
+                    path === "/"
+                      ? `${css["button-link"]} ${css.active}`
+                      : `${css["button-link"]}`
+                  }
                   path="/"
                 >
                   Strona Główna
@@ -52,7 +57,11 @@ function Header() {
                 {" "}
                 <Button
                   className={css.button}
-                  linkClassName={css["button-link"]}
+                  linkClassName={
+                    path === "/cennik"
+                      ? `${css["button-link"]} ${css.active}`
+                      : `${css["button-link"]}`
+                  }
                   path="/cennik"
                 >
                   Cennik
@@ -61,14 +70,18 @@ function Header() {
               <div>
                 <Button
                   className={css.button}
-                  linkClassName={css["button-link"]}
+                  linkClassName={
+                    path === "/kontakt"
+                      ? `${css["button-link"]} ${css.active}`
+                      : `${css["button-link"]}`
+                  }
                   path="/kontakt"
                 >
                   Kontakt
                 </Button>
               </div>
             </li>
-            <li className={css["nav-divider"]}></li>
+            {/* <li className={css["nav-divider"]}></li> */}
             <li className={css["img-container"]}>
               {GetImage("logo-venice.png")}
             </li>
