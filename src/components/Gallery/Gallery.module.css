@@ -17,12 +17,42 @@
 .list {
   display: flex;
   list-style: none;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1.9rem;
   margin: 0;
   padding-left: 3rem;
 }
 
+@media (max-width: 600px) {
+  .list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .list > li {
+    margin: 0;
+  }
+
+  .face1 {
+    margin: 0;
+  }
+
+  .nails1 {
+    margin: 0;
+  }
+
+  .nails2 {
+    margin: 0;
+  }
+
+  .nails3 {
+    margin: 0;
+  }
+}
 .list > li {
   position: relative;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.253);
@@ -42,7 +72,6 @@
 }
 
 .face1 {
-  margin-left: 2rem;
   height: 15rem;
   width: 10rem;
 }

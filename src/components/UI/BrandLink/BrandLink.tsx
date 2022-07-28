@@ -21,9 +21,14 @@ const BrandLink: React.FC<Props> = ({ path, icon, children, className }) => {
         </div>
       </li>
       <li>
-        <Link href={path}>
-          <a className={css.link}>{children}</a>
-        </Link>
+        <a
+          className={`${css.button} ${css.link}`}
+          href={path}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
       </li>
     </ul>
   );

@@ -1,5 +1,6 @@
 import css from "./SideNav.module.css";
 import "../../providers/icons";
+import { fbUrl, instaUrl } from "../../providers/urls";
 
 import Backdrop from "../../UI/Backdrop/Backdrop";
 import SideNavButton from "../../UI/Button/Button";
@@ -25,33 +26,33 @@ function SideNav() {
         <SideNavButton
           linkClassName={css["sideNavButton-link"]}
           className={css.sideNavButton}
-          path={"dummy"}
+          path={"/"}
         >
           Strona Główna
         </SideNavButton>
         <SideNavButton
           linkClassName={css["sideNavButton-link"]}
           className={css.sideNavButton}
-          path={"dummy"}
+          path={"/cennik"}
         >
           Cennik
         </SideNavButton>
         <SideNavButton
           linkClassName={css["sideNavButton-link"]}
           className={css.sideNavButton}
-          path={"dummy"}
+          path={"/kontakt"}
         >
           Kontakt
         </SideNavButton>
         <BrandLink
-          path={"dummy"}
+          path={fbUrl}
           icon={faFacebookF}
           className={css["brand-link"]}
         >
           Facebook
         </BrandLink>
         <BrandLink
-          path={"dummy"}
+          path={instaUrl}
           icon={faInstagram}
           className={css["brand-link"]}
         >

@@ -1,15 +1,21 @@
 import css from "./Header.module.css";
+
+import MediaQuery from "react-responsive";
+import { useRouter } from "next/router";
+
 import { GetImage } from "../providers/images";
+import { fbUrl, instaUrl } from "../providers/urls";
 
 import { useAppDispatch, useAppSelector } from "../../hooks/hooks";
 import { sideNavActions } from "../../store/side-nav";
 
 import Hamburger from "../UI/Hamburger/Hamburger";
 import SideNav from "../Mobile/SideNav/SideNav";
-import MediaQuery from "react-responsive";
 import Button from "../UI/Button/Button";
 
 function Header() {
+  const router = useRouter();
+  console.log(router.pathname);
   const sideNavOpen = useAppSelector((state) => state.sideNav.isOpen);
   const dispatch = useAppDispatch();
 
@@ -37,7 +43,7 @@ function Header() {
                 <Button
                   className={css.button}
                   linkClassName={css["button-link"]}
-                  path="dummy"
+                  path="/"
                 >
                   Strona Główna
                 </Button>
@@ -47,7 +53,7 @@ function Header() {
                 <Button
                   className={css.button}
                   linkClassName={css["button-link"]}
-                  path="dummy"
+                  path="/cennik"
                 >
                   Cennik
                 </Button>
@@ -56,7 +62,7 @@ function Header() {
                 <Button
                   className={css.button}
                   linkClassName={css["button-link"]}
-                  path="dummy"
+                  path="/kontakt"
                 >
                   Kontakt
                 </Button>
@@ -68,22 +74,24 @@ function Header() {
             </li>
             <li className={css["nav-buttons-right"]}>
               <div>
-                <Button
-                  className={css.button}
-                  linkClassName={css["button-link"]}
-                  path="dummy"
+                <a
+                  className={`${css.button} ${css["button-link"]}`}
+                  href={fbUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Facebook
-                </Button>
+                </a>
               </div>
               <div>
-                <Button
-                  className={css.button}
-                  linkClassName={css["button-link"]}
-                  path="dummy"
+                <a
+                  className={`${css.button} ${css["button-link"]}`}
+                  href={instaUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Instagram
-                </Button>
+                </a>
               </div>
             </li>
           </ul>
