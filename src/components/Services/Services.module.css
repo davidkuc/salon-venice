@@ -1,4 +1,6 @@
 .section {
+  --color-text: var(--color-coral-light);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,11 +71,11 @@
 }
 
 .button-link {
-  color: var(--color-coral-light);
+  color: var(--color-text);
 }
 
 .button:active,
 .button:hover {
-  background-color: var(--color-coral-active);
+  background-color: var(--color-black-active);
   border-bottom-color: var(--color-black) !important;
 }

@@ -7,6 +7,7 @@ import { sideNavActions } from "../../store/side-nav";
 import Hamburger from "../UI/Hamburger/Hamburger";
 import SideNav from "../Mobile/SideNav/SideNav";
 import MediaQuery from "react-responsive";
+import Button from "../UI/Button/Button";
 
 function Header() {
   const sideNavOpen = useAppSelector((state) => state.sideNav.isOpen);
@@ -20,9 +21,9 @@ function Header() {
     <header className={css.header}>
       <nav className={css.nav}>
         <MediaQuery maxWidth={600}>
-          <ul className={css["nav-list__mobile"]}>
+          <ul className={css["nav-list-mobile"]}>
             <Hamburger onClick={hamburgerClickHandler} />
-            <div className={css["img-container"]}>
+            <div className={css["img-container-mobile"]}>
               {GetImage("logo-venice.png")}
             </div>
           </ul>
@@ -30,12 +31,61 @@ function Header() {
         </MediaQuery>
         <MediaQuery minWidth={600}>
           <ul className={css["nav-list"]}>
-            <li>Strona Główna</li>
-            <li>Cennik</li>
-            <li>kontakt</li>
-            <li className={css.title}>Salon Kosmetyczny Venice</li>
-            <li>Facebook</li>
-            <li>Instagram</li>
+            <li className={css["nav-buttons-left"]}>
+              <div>
+                {" "}
+                <Button
+                  className={css.button}
+                  linkClassName={css["button-link"]}
+                  path="dummy"
+                >
+                  Strona Główna
+                </Button>
+              </div>
+              <div>
+                {" "}
+                <Button
+                  className={css.button}
+                  linkClassName={css["button-link"]}
+                  path="dummy"
+                >
+                  Cennik
+                </Button>
+              </div>
+              <div>
+                <Button
+                  className={css.button}
+                  linkClassName={css["button-link"]}
+                  path="dummy"
+                >
+                  Kontakt
+                </Button>
+              </div>
+            </li>
+
+            <li className={css["img-container"]}>
+              {GetImage("logo-venice.png")}
+            </li>
+            <li className={css["nav-buttons-right"]}>
+              <div>
+                <Button
+                  className={css.button}
+                  linkClassName={css["button-link"]}
+                  path="dummy"
+                >
+                  Facebook
+                </Button>
+              </div>
+              <div>
+                <Button
+                  className={css.button}
+                  linkClassName={css["button-link"]}
+                  path="dummy"
+                >
+                  Instagram
+                </Button>
+              </div>
+            </li>
           </ul>
         </MediaQuery>
       </nav>
