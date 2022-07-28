@@ -23,7 +23,13 @@ function Services() {
           </ServiceIcon>
         </li>
       </ul>
-      <Button path={"dummy"}>Cennik</Button>
+      <Button
+        className={css.button}
+        linkClassName={css["button-link"]}
+        path={"dummy"}
+      >
+        Cennik
+      </Button>
     </section>
   );
 }

@@ -7,7 +7,7 @@ import GalleryImage from "./GalleryImage";
 import { ImageObj } from "../providers/types";
 
 function Gallery() {
-  const [imageOpen, setImageOpen] = useState(true);
+  const [imageOpen, setImageOpen] = useState(false);
   const [initialImageId, setInitialImageId] = useState(0);
 
   const images = [

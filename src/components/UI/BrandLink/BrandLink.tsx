@@ -9,11 +9,12 @@ type Props = {
   path: string;
   icon: IconDefinition;
   children: string;
+  className?: string;
 };
 
-const BrandLink: React.FC<Props> = ({ path, icon, children }) => {
+const BrandLink: React.FC<Props> = ({ path, icon, children, className }) => {
   return (
-    <ul className={css["brand-link"]}>
+    <ul className={`${css["brand-link"]} ${className}`}>
       <li>
         <div className={css.container}>
           <FontAwesomeIcon icon={icon} />

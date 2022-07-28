@@ -1,16 +1,13 @@
 .brand-link {
- display: flex;
- gap: 2rem;
- padding-left: 7rem;
- margin: 1rem 0;
-  }
-
+  display: flex;
+  gap: 2rem;
+}
 
 .link {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .container {
-    width: 2rem;
+  width: 2rem;
 }

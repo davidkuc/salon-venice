@@ -2,21 +2,30 @@ import css from "./Button.module.css";
 
 import Link from "next/link";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
-
 type Props = {
   path: string;
-  icon?: IconDefinition;
   children: string;
+  className?: string;
+  linkClassName?: string;
 };
 
-const Button: React.FC<Props> = ({ path, icon, children }) => {
+/**
+ * @param path
+ *  @param className
+ *  @param children
+ * @param linkClassName CSS for the text in the button (which is the link)
+ * @returns
+ */
+const Button: React.FC<Props> = ({
+  path,
+  children,
+  className,
+  linkClassName,
+}) => {
   return (
-    <div className={css.button}>
-      {icon && <FontAwesomeIcon icon={icon} className={css["icon-fix"]} />}
+    <div className={`${css["button"]} ${className}`}>
       <Link href={path}>
-        <a className={css.link}>{children}</a>
+        <a className={`${css.link} ${linkClassName}`}>{children}</a>
       </Link>
     </div>
   );
