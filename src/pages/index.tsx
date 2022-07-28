@@ -1,8 +1,8 @@
-import Description from "../components/Description/Description";
-import Greeting from "../components/Greeting/Greeting";
-import Services from "../components/Services/Services";
-import Brands from "../components/Brands/Brands";
-import Gallery from "../components/Gallery/Gallery";
+import Description from "../components/Home/Description/Description";
+import Greeting from "../components/Home/Greeting/Greeting";
+import Services from "../components/Home/Services/Services";
+import Brands from "../components/Home/Brands/Brands";
+import Gallery from "../components/Home/Gallery/Gallery";
 
 function HomePage() {
   return (

@@ -1,0 +1,32 @@
+.price-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.number {
+    font-size: 2rem;
+  color: var(--color-coral);
+}
+
+.line-break {
+  margin: 0.2rem 0;
+  width: 12rem;
+  height: 2px;
+  background-color: var(--color-coral);
+  border-radius: 12px;
+}
+
+.title {
+    font-size: 2.3rem;
+    font-family: var(--font-title);
+}
+
+.container {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.services {
+    display: flex;
+}
