@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 
+.price-list-darkerBackground {
+background-color: beige;
+}
+
 .number {
     font-size: 2rem;
   color: var(--color-coral);
@@ -29,4 +33,13 @@
 
 .services {
     display: flex;
+    flex-wrap: wrap;
 }
+
+.line-break-vertical-black {
+    margin: 2rem 1rem;
+    width: 1px;
+    height: 7rem;
+    background-color: var(--color-black-active);
+    border-radius: 12px;
+  }
