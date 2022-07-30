@@ -5,7 +5,7 @@
   justify-content: center;
   background-color: var(--color-coral);
   height: 30rem;
-  width:100%;
+  width:100vw;
 }
 
 .article {
