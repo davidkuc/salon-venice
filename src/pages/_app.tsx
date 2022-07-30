@@ -1,5 +1,5 @@
 import { Provider } from "react-redux";
-import "../components/providers/icons"
+import "../components/providers/icons";
 
 import "../styles/globals.css";
 
