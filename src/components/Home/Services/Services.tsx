@@ -47,7 +47,7 @@ function Services() {
       <Button
         className={css.button}
         linkClassName={css["button-link"]}
-        path={"dummy"}
+        path={"/cennik"}
       >
         Cennik
       </Button>
