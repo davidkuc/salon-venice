@@ -41,7 +41,7 @@ function SideNav() {
         </SideNavButton>
         <SideNavButton
           linkClassName={css["sideNavButton-link"]}
-          className={css.sideNavButton}
+          className={`${css.sideNavButton} ${css["sideNavButton-last"]}`}
           path={"/kontakt"}
           onClick={closeSideNavHandler}
         >
