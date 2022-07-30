@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.map {
+    height: 25rem;
+    width: 25rem;
+}
+
+@media (max-width: 800px) {
+    .map {
+        height: 80vw;
+        width: 80vw;
+    }
+}
+
+@media (min-width: 800px) {
+    .map {
+        height: 40vw;
+        width: 40vw;
+    }
+}
