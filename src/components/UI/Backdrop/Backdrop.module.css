@@ -1,0 +1,11 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: rgba(12, 12, 12, 0.5);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }

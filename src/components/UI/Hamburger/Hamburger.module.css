@@ -1,16 +1,22 @@
 .hamburger {
+  border: 3px solid transparent;
   width: 5rem;
   height: 5rem;
-  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.hamburger li {
-  margin: 0.8rem;
+.hamburger > li {
+  margin: 0;
+  margin-top: 1rem;
   padding: 0;
   background-color: #b5b5b5;
   height: 5px;
   width: 100%;
   border-radius: 12px;
+}
+
+.hamburger:active,
+.hamburger:hover {
+  border: 3px solid coral;
 }

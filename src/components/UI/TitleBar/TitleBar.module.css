@@ -1,0 +1,13 @@
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  width: 100vw;
+  background-color: var(--color-beige);
+}
+
+.text {
+    font-size: 3.6rem;
+    font-family: var(--font-title);
+}
