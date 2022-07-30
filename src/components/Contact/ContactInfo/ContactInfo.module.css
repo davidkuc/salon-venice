@@ -16,7 +16,7 @@
   position: relative;
   display: flex;
   gap: 1rem;
-margin-bottom: 1rem;
+margin-bottom: 0.8rem;
 max-width: 20rem;
 }
 
@@ -26,6 +26,7 @@ max-width: 20rem;
 }
 
 .email {
+  margin-top:0.5rem;
   display: flex;
 }
 .email-label {

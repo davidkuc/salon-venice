@@ -7,6 +7,7 @@ type Props = {
   children: string;
   className?: string;
   linkClassName?: string;
+  onClick?: Function;
 };
 
 /**
@@ -21,9 +22,17 @@ const Button: React.FC<Props> = ({
   children,
   className,
   linkClassName,
+  onClick,
 }) => {
+  
+  const onClickHandler = () => {
+    if (onClick) {
+      onClick!();
+    }
+  };
+
   return (
-    <div className={`${css["button"]} ${className}`}>
+    <div onClick={onClickHandler} className={`${css["button"]} ${className}`}>
       <Link href={path}>
         <a className={`${css.link} ${linkClassName}`}>{children}</a>
       </Link>

@@ -29,7 +29,7 @@ function ContactInfo({
       </article>
       <article className={css.email}>
         <div className={css["email-label"]}>E-mail:</div>
-        <div className={css.email}> {email}</div>
+        <div > {email}</div>
       </article>
       <article className={css.address}>
         <div>{street}</div>

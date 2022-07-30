@@ -14,19 +14,20 @@ import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 function SideNav() {
   const dispatch = useAppDispatch();
 
-  const backdropClickHandler = () => {
+  const closeSideNavHandler = () => {
     dispatch(sideNavActions.close());
   };
 
   return (
     <div>
-      <Backdrop onClick={backdropClickHandler} />
+      <Backdrop onClick={closeSideNavHandler} />
       <ul className={css.sideNav}>
         <li className={css.title}>Venice</li>
         <SideNavButton
           linkClassName={css["sideNavButton-link"]}
           className={css.sideNavButton}
           path={"/"}
+          onClick={closeSideNavHandler}
         >
           Strona Główna
         </SideNavButton>
@@ -34,6 +35,7 @@ function SideNav() {
           linkClassName={css["sideNavButton-link"]}
           className={css.sideNavButton}
           path={"/cennik"}
+          onClick={closeSideNavHandler}
         >
           Cennik
         </SideNavButton>
@@ -41,6 +43,7 @@ function SideNav() {
           linkClassName={css["sideNavButton-link"]}
           className={css.sideNavButton}
           path={"/kontakt"}
+          onClick={closeSideNavHandler}
         >
           Kontakt
         </SideNavButton>
