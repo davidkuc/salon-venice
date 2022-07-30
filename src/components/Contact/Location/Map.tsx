@@ -27,7 +27,7 @@ function Map({ className, children }: Props) {
 
   return (
     <div className={className}>
-      <LoadScript googleMapsApiKey="AIzaSyC3O00rP6Vu3tfid2C5FljbWYTniPIP4l8">
+      <LoadScript googleMapsApiKey={process.env.GOOGLE_MAPS_API_KEY!}>
         <GoogleMap
           zoom={18}
           center={{ lat: 49.99297599263852, lng: 20.04247030712375 }}
