@@ -20,4 +20,13 @@
     padding-left: 3rem;
     padding-right: 5rem;
 }
+
+}
+
+@media (min-width: 1200px) {
+
+.contact-info {
+    margin-top: 8vw;
+    margin-right: 12vw;
+}
 }
