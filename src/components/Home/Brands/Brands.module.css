@@ -48,21 +48,25 @@
 .souvre {
   height: 23rem;
   width: 27rem;
+  max-width: 393px;
 }
 
 .organic-series {
   height: 23rem;
   width: 27rem;
+  max-width: 393px;
 }
 
 .mac {
   height: 20rem;
   width: 24rem;
+  max-width: 393px;
 }
 
 .folaroni {
   height: 15rem;
   width: 24rem;
+  max-width: 393px;
 }
 
 .last-child {
