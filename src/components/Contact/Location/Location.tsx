@@ -16,6 +16,7 @@ function Location() {
             </div>
           </div>
         </Map>
+       
       </div>
     </section>
   );

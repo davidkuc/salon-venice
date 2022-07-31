@@ -22,6 +22,7 @@ function Map({ className, children }: Props) {
         layout="fill"
         className={css.image}
       />
+      {children}
     </div>
   );
 }
