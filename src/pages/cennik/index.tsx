@@ -4,37 +4,38 @@ import { Service } from "../../components/providers/types";
 
 function Cennik() {
   const zabiegiNaTwarz = [
-    new Service("Zabieg na twarz + maska algowa", "100 - 150"),
+    new Service("Zabieg na twarz + maska algowa", "100 - 170"),
     new Service("Zabieg mezoterapii", "150"),
     new Service("Kuracja kwasami", "100 - 150"),
     new Service("Mikrodermabrazja diamentowa", "100 - 150"),
   ];
 
-  const peelingKawitacyjny = [new Service("Peeling kawitacyjny", "100 - 130")];
+  const peelingKawitacyjny = [new Service("Peeling kawitacyjny", "100 - 140")];
 
   const makijaz = [
-    new Service("Makijaż", "70-100"),
+    new Service("Makijaż", "70-140"),
     new Service("Sztuczne rzęsy", "20"),
   ];
 
   const makijazPermanentny = [
     new Service("Makijaż permanenty brwi", "500-700"),
-    new Service("Makijaż permanentny powiek", "300-500"),
-    new Service("Makijaż permanentny ust", "500")
+    new Service("Makijaż permanentny powiek", "600"),
+    new Service("Makijaż permanentny ust", "600")
   ];
 
   const pielęgnacjaDloni = [
     new Service("Manicure", "50"),
-    new Service("Manicure hybrydowy", "70"),
-    new Service("Żel + hybryda na naturalną płytkę", "100"),
-    new Service("Przedłużanie paznokci żelem, akrylem, hybrydą", "130"),
-    new Service("Zabieg nawilżająco - regenerujący dłoni", "40"),
+    new Service("Manicure hybrydowy", "100"),
+    new Service("Żel + hybryda na naturalną płytkę", "120"),
+    new Service("Przedłużanie paznokci żelem, akrylem, hybrydą", "150"),
+    new Service("Zabieg nawilżająco - regenerujący dłoni", "50"),
     new Service("Kąpiel parafinowy dłoni", "30"),
     new Service("Usuwanie hybryd, tytanu, żelu, akrylu", "20")
   ];
 
   const pielęgnacjaStop = [
-    new Service("Pedicure", "70-120"),
+    new Service("Pedicure", "80-120"),
+    new Service("Pedicure Hybrydowy", "150"),
     new Service("Kąpiel parafinowa", "30"),
     new Service("Zabieg nawilżająco - regenerujący", "40")
 
