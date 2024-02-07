@@ -24,17 +24,17 @@ function Cennik() {
   ];
 
   const pielęgnacjaDloni = [
-    new Service("Manicure", "50"),
-    new Service("Manicure hybrydowy", "100"),
-    new Service("Żel + hybryda na naturalną płytkę", "120"),
-    new Service("Przedłużanie paznokci żelem, akrylem, hybrydą", "150"),
+    new Service("Manicure", "70"),
+    new Service("Manicure hybrydowy", "150"),
+    new Service("Żel + hybryda na naturalną płytkę", "150"),
+    new Service("Przedłużanie paznokci żelem, akrylem, hybrydą", "180"),
     new Service("Zabieg nawilżająco - regenerujący dłoni", "50"),
     new Service("Kąpiel parafinowy dłoni", "30"),
     new Service("Usuwanie hybryd, tytanu, żelu, akrylu", "20")
   ];
 
   const pielęgnacjaStop = [
-    new Service("Pedicure", "80-120"),
+    new Service("Pedicure", "90-130"),
     new Service("Pedicure Hybrydowy", "150"),
     new Service("Kąpiel parafinowa", "30"),
     new Service("Zabieg nawilżająco - regenerujący", "40")
