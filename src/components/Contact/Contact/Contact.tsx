@@ -15,7 +15,7 @@ function Contact() {
           city="Wieliczka"
           email="aniawolf@vp.pl"
           postalCode="32-020"
-          street="Krakowska 4c"
+          street="ul. Bednarka 7"
           className={css["contact-info"]}
         />
         <Location />
