@@ -14,16 +14,19 @@ function Services() {
           <li>
             <ServiceIcon icon="spa">Makijaż</ServiceIcon>
           </li>
-
           <div className={css["line-break-horizontal-black"]}></div>
           <li>
-            <ServiceIcon icon="mortar-pestle">Pielęgnacja skóry</ServiceIcon>
+            <ServiceIcon icon="mortar-pestle">Zabiegi pielęgnacyjne</ServiceIcon>
           </li>
           <div className={css["line-break-horizontal-black"]}></div>
-          <li className={css["last-child-mobile"]}>
+          <li>
             <ServiceIcon icon="spray-can-sparkles">
               {"Pedicure & Manicure"}
             </ServiceIcon>
+          </li>
+          <div className={css["line-break-horizontal-black"]}></div>
+          <li className={css["last-child-mobile"]}>
+            <ServiceIcon icon="spa">Makijaż permanentny</ServiceIcon>
           </li>
         </ul>
       </MediaQuery>
@@ -34,13 +37,17 @@ function Services() {
           </li>
           <div className={css["line-break-vertical-black"]}></div>
           <li>
-            <ServiceIcon icon="mortar-pestle">Pielęgnacja skóry</ServiceIcon>
+            <ServiceIcon icon="mortar-pestle">Zabiegi pielęgnacyjne</ServiceIcon>
           </li>
           <div className={css["line-break-vertical-black"]}></div>
-          <li className={css["last-child"]}>
+          <li>
             <ServiceIcon icon="spray-can-sparkles">
               {"Pedicure & Manicure"}
             </ServiceIcon>
+          </li>
+          <div className={css["line-break-vertical-black"]}></div>
+          <li className={css["last-child"]}>
+            <ServiceIcon icon="spa">Makijaż permanentny</ServiceIcon>
           </li>
         </ul>
       </MediaQuery>
